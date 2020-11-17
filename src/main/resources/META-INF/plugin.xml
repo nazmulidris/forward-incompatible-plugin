@@ -1,0 +1,33 @@
+<idea-plugin>
+  <id>com.google.android.studio.incompatible-plugin</id>
+  <name>Incompatible with 4.1.1 or 201, but Compatible with 4.0.2 or 193</name>
+  <vendor email="everyone@google.com" url="http://www.google.com">Google</vendor>
+
+  <!--
+  More info: Please read http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html
+  ⚠️ Make sure that the numbers here sync with the numbers in the `build.gradle.kts` file:
+  `intelliJ { version = "... " }`. These have to be kept in sync, otherwise IDEA will refuse to install this plugin
+  complaining that it is not compatible.
+  -->
+  <idea-version since-build="2019.1" until-build="2019.3" />
+
+  <description><![CDATA[
+    Incompatible plugin for 4.1<br>
+    <em>Compatible with 4.0.2</em>
+    ]]></description>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add notification action. -->
+    <action id="MyPlugin.actions.ShowNotificationSample" class="ShowNotificationAction"
+        description="Show sample notifications" text="Sample Notification" icon="/icons/ic_extension.svg" />
+
+  </actions>
+</idea-plugin>

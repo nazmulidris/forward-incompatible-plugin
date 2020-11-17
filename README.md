@@ -1,0 +1,1 @@
+This IDEA plugin is compatible w/ Studio 4.0.2 and incompatible w/ 4.1.1 (basically any version after 4.0.2).
