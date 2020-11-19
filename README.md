@@ -1,1 +1,2 @@
-This IDEA plugin is compatible w/ Studio 4.0.2 and incompatible w/ 4.1.1 (basically any version after 4.0.2).
+1. This IDEA plugin is incompatible for Studio versions > 4.1 and < 4.0.
+2. It is compatible with version 4.0 (191) to 4.1 (201) only.

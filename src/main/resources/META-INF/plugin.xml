@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.google.android.studio.incompatible-plugin</id>
-  <name>Incompatible with 4.1.1 or 201, but Compatible with 4.0.2 or 193</name>
+  <name>Incompatible after Studio 4.1</name>
   <vendor email="everyone@google.com" url="http://www.google.com">Google</vendor>
 
   <!--
@@ -9,11 +9,11 @@
   `intelliJ { version = "... " }`. These have to be kept in sync, otherwise IDEA will refuse to install this plugin
   complaining that it is not compatible.
   -->
-  <idea-version since-build="2019.1" until-build="2019.3" />
+  <idea-version since-build="2019.1" until-build="2020.1" />
 
   <description><![CDATA[
-    Incompatible plugin for 4.1<br>
-    <em>Compatible with 4.0.2</em>
+    Incompatible plugin for > 4.1 and < 4.0<br>
+    <em>Compatible from 4.0 (191) to 4.1 (201) only</em>
     ]]></description>
 
   <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html

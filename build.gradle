@@ -18,11 +18,23 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '193.6911.18'  // Same IntelliJ IDEA version (2019.3.1) as target 4.0.2 Android Studio
+    version '201.8743.12'  // Same IntelliJ IDEA version (2020.1.4) as target 4.1 Android Studio
     type 'IC'              // Use IntelliJ IDEA CE because it's the basis of the IntelliJ Platform
 }
 
 patchPluginXml {
     changeNotes """
       <em>None</em><br>"""
+}
+
+// See: https://github.com/JetBrains/gradle-intellij-plugin#plugin-verifier-dsl
+// See: https://data.services.jetbrains.com/products?fields=code,name,releases.downloads,releases.version,releases.build,releases.type&code=IIC,IIU
+// build code     -> release code
+// IC-201.8538.31 -> 2020.1.3
+// IC-201.8743.12 -> 2020.1.4
+// IC-202.7660.26 -> 2020.2.3
+runPluginVerifier {
+    // The following lines are equivalent, just use one or another:
+    // ideVersions = ["2020.1.3", "2020.1.4","2020.2.3"]
+    ideVersions = ["201.8538.31", "201.8743.12", "202.7660.26"]
 }
